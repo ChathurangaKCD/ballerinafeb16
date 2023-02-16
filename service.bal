@@ -1,6 +1,7 @@
 import ballerina/http;
 
 configurable string hostVar = "localhost";
+configurable string host2Var = "localhost";
 
 # A service representing a network-accessible API
 # bound to port `9090`.
@@ -14,6 +15,6 @@ service / on new http:Listener(9090) {
         if name is "" {
             return error("name should not be empty!");
         }
-        return "Hello, " + name + "on" + hostVar;
+        return "Hello, " + name + "on" + hostVar + host2Var;
     }
 }
