@@ -1,7 +1,7 @@
 import ballerina/http;
 
 configurable string hostVar = "localhost";
-configurable string host2Var = "localhost";
+configurable string host2Var = "localhost:8080";
 
 # A service representing a network-accessible API
 # bound to port `9090`.
